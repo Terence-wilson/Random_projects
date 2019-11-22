@@ -32,10 +32,12 @@ if __name__ == "__main__":
         print(yahtzee_counter(bigboi))
         end = time.time()
         print(end - start)
-    else:
-        bigboi = list_generator(int(args[3]), int(args[1]), int(args[2]))
+    elif len(args) == 4:
+        bigboi = list_generator(int(args[1]), int(args[2]), int(args[3]))
         print(bigboi)
         start = time.time()
         print(yahtzee_counter(bigboi))
         end = time.time()
         print(end - start)
+    else:
+        print("please try again with a number for length, min, and max")
