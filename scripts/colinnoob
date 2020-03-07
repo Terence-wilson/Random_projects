@@ -1,0 +1,68 @@
+#!/bin/bash
+
+#This script gives colin the ability to use linux
+
+mkdir /bin/noobscripts
+touch /bin/noobscripts/please
+touch /bin/noobscripts/what
+
+#construct please
+echo '#!/bin/bash' >> /bin/noobscripts/please
+echo ' ' >> /bin/noobscripts/please
+echo '#This script will allow colin to actually use the command please' >> /bin/noobscripts/please
+echo ' ' >> /bin/noobscripts/please
+echo 'case $1 in' >> /bin/noobscripts/please
+echo '   download)' >> /bin/noobscripts/please
+echo '      apt install $2' >> /bin/noobscripts/please
+echo '      ;;' >> /bin/noobscripts/please
+echo '   *)' >> /bin/noobscripts/please
+echo '      echo "I dont know how to do that yet... Teach me! UwU"' >> /bin/noobscripts/please
+echo '      ;;' >> /bin/noobscripts/please
+echo 'esac' >> /bin/noobscripts/please
+
+
+#construct what
+echo '#!/bin/bash' >> /bin/noobscripts/what
+echo '' >> /bin/noobscripts/what
+echo 'response=$(( $(date +%s) % 10 ))' >> /bin/noobscripts/what
+echo 'case $response in' >> /bin/noobscripts/what
+echo '   1)' >> /bin/noobscripts/what
+echo '      echo "U WOT M8"' >> /bin/noobscripts/what
+echo '      ;;' >> /bin/noobscripts/what
+echo '   2)' >> /bin/noobscripts/what
+echo '      echo "SAY WHAT ONE MORE TIME' >> /bin/noobscripts/what
+echo '      ;;' >> /bin/noobscripts/what
+echo '   3)' >> /bin/noobscripts/what
+echo '      echo "You son of a bitch. You fucking piece of shit. You goddamn fucker"' >> /bin/noobscripts/what
+echo '      ;;' >> /bin/noobscripts/what
+echo '   4)' >> /bin/noobscripts/what
+echo '      echo "Its ok hon, you will figure it out!"' >> /bin/noobscripts/what
+echo '      ;;' >> /bin/noobscripts/what
+echo '   5)' >> /bin/noobscripts/what
+echo '      echo "TBH i have no idea what to do"' >> /bin/noobscripts/what
+echo '      ;;' >> /bin/noobscripts/what
+echo '   6)' >> /bin/noobscripts/what
+echo '      echo "Try doing sudo reboot"' >> /bin/noobscripts/what
+echo '      ;;' >> /bin/noobscripts/what
+echo '   7)' >> /bin/noobscripts/what
+echo '      echo "If you stop doing this to me I will do what oyu want"' >> /bin/noobscripts/what
+echo '      ;;' >> /bin/noobscripts/what
+echo '   8)' >> /bin/noobscripts/what
+echo '      echo "what"' >> /bin/noobscripts/what
+echo '      ;;' >> /bin/noobscripts/what
+echo '   9)' >> /bin/noobscripts/what
+echo '      echo "what"' >> /bin/noobscripts/what
+echo '      ;;' >> /bin/noobscripts/what
+echo '   0)' >> /bin/noobscripts/what
+echo '      echo "what"' >> /bin/noobscripts/what
+echo '      ;;' >> /bin/noobscripts/what
+echo 'esac' >> /bin/noobscripts/what
+
+export PATH=&PATH:/bin/noobscripts
+echo export PATH=&PATH:/bin/noobscripts >> ~/.bashrc
+
+
+
+
+
+
